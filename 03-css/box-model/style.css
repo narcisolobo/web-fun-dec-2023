@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rebeccapurple;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+p.only-child {
+  margin-top: 40px;
+}
+
+.container {
+  border: 5px dashed red;
+  padding: 20px;
+  width: 500px;
+}
+
+/* .container p {
+  margin: 20px;
+} */
