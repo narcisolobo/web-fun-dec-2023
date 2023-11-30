@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <label for="favoriteTvShow">Favorite TV Show</label>
+            <select name="favoriteTvShow" id="favoriteTvShow">
+                <option disabled hidden selected>Select a Show</option>
+                <option value="LOST">LOST</option>
+                <option value="The Office">The Office</option>
+                <option value="Futurama">Futurama</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Coke or Pepsi?</legend>
+            <input type="radio" name="coke-or-pepsi" id="coke">
+            <label for="coke">Coke</label>
+            <input type="radio" name="coke-or-pepsi" id="pepsi">
+            <label for="pepsi">Pepsi</label>
+        </fieldset>
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <!-- <input type="submit" value="Submit Info"> -->
+        <button type="submit">Submit Info</button>
+    </form>
+</body>
+
+</html>
