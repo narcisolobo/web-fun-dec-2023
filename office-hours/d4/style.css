@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.emphasis {
+  color: royalblue;
+}

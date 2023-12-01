@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+li {
+  background-color: aqua;
+}
+
+header {
+  background-color: burlywood;
+  min-height: 50px;
+}
+
+main {
+  background-color: lightgreen;
+  flex: 2;
+  align-self: flex-start;
+}
+
+aside {
+  background-color: lightskyblue;
+  flex: 1;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  /* defines the spacing on the x-axis */
+  justify-content: space-between;
+  /* defines the spacing on the y-axis */
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}

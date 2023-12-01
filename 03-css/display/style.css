@@ -1,0 +1,29 @@
+h1 {
+  background-color: aqua;
+}
+
+h2 {
+  background-color: chartreuse;
+}
+
+.feature {
+  background-color: rebeccapurple;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+
+main {
+  background-color: coral;
+  width: 800px;
+  height: 500px;
+  display: inline-block;
+}
+
+aside {
+  background-color: goldenrod;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
