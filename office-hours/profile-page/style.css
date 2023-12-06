@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+main {
+  flex: 2;
+  border: 2px dashed blue;
+}
+
+aside {
+  flex: 1;
+  border: 2px dashed purple;
+  align-self: flex-start;
+}
+
+.card {
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
