@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: #990d00;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #ffd966;
+  padding: 5px 0;
+}
+
+main,
+section {
+  padding: 24px 0;
+}
+
+/* utility classes start */
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ffd966;
+  padding: 5px 20px;
+  border: 2px solid black;
+  font-size: large;
+  box-shadow: 2px 2px black;
+  cursor: pointer;
+}
+
+/* utility classes end */
+
+/* nav classes start */
+
+ul.menu {
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover,
+a.active {
+  font-weight: bold;
+}
+
+/* nav classes end */
+
+/* main classes start */
+
+.album-cover {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.album-copy {
+  align-self: flex-start;
+}
+
+.album-copy > h4,
+.album-copy > p {
+  margin-bottom: 10px;
+}
+
+/* main classes end */
+
+/* trending classes start */
+
+.likes {
+  margin-top: 10px;
+}
+
+.heart-like {
+  cursor: pointer;
+}
+
+/* trending classes end */

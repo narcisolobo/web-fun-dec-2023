@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Vinyl Countdown</title>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex">
+            <h1 id="logo-text" onmouseover="changeLogoText()" onmouseout="changeLogoTextBack()">The Vinyl Countdown</h1>
+            <button class="btn" onclick="logout(this)">LOG IN</button>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="d-flex menu">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">WISHLIST</a></li>
+                <li><a href="#">TRENDING</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2 class="section-title">TODAY'S HOT PICK</h2>
+            <div class="card">
+                <div class="card-body d-flex">
+                    <img src="./images/saturday-snakes.jpg" alt="Saturday Snakes" class="album-cover">
+                    <div class="album-copy">
+                        <h3>Saturday Snakes</h3>
+                        <h4><em>King Purple</em></h4>
+                        <p>"Saturday Snakes" by King Purple is a mind-bending journey through the gritty and pulsating
+                            heart of garage rock. From the first distorted riff to the last crashing cymbal, this album
+                            channels the raw energy of The White Stripes while injecting a unique, venomous charm of its
+                            own.</p>
+                        <p>The opening track, "Sonic Serpent," slithers through your ears with a hypnotic guitar riff,
+                            setting the tone for the entire album. The lead singer's vocals are a perfect blend of snarl
+                            and swagger, reminiscent of Jack White at his prime. Tracks like "Electric Rattles" and
+                            "Rebel Reptile" showcase the band's ability to weave catchy melodies with unapologetic
+                            distortion, creating an infectious sonic concoction that will leave you hooked.</p>
+                        <p>If you're a fan of garage rock that bites hard and refuses to let go, "Saturday Snakes" is
+                            the venomous antidote you've been waiting for.</p>
+                        <button class="btn" onclick="removeFromDOM(this)">ADD TO WISHLIST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="container">
+            <h2 class="section-title">TOP TRENDING</h2>
+            <div class="d-flex">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./images/aloft.jpg" alt="Aloft" class="album-cover">
+                        <h4>Aloft</h4>
+                        <h5><em>The Love Balloons</em></h5>
+                        <div class="d-flex likes">
+                            <img class="heart-like" src="./images/heart.png" alt="Like this album" onclick="increaseLikes('#aloft-likes')">
+                            <small><span id="aloft-likes">142</span> likes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./images/purr-for-me.jpg" alt="Purr For Me" class="album-cover">
+                        <h4>Purr For Me</h4>
+                        <h5><em>Kittensica</em></h5>
+                        <div class="d-flex likes">
+                            <img class="heart-like" src="./images/heart.png" alt="Like this album" onclick="increaseLikes('#purr-likes')">
+                            <small><span id="purr-likes">128</span> likes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./images/cubic-zirconia.jpg" alt="Cubic Zirconia" class="album-cover">
+                        <h4>Cubic Zirconia</h4>
+                        <h5><em>Megabox</em></h5>
+                        <div class="d-flex likes">
+                            <img class="heart-like" src="./images/heart.png" alt="Like this album" onclick="increaseLikes('#cubic-likes')">
+                            <small><span id="cubic-likes">99</span> likes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./images/rapid-transit.jpg" alt="Rapid Transit" class="album-cover">
+                        <h4>Rapid Transit</h4>
+                        <h5><em>Public Housing</em></h5>
+                        <div class="d-flex likes">
+                            <img class="heart-like" src="./images/heart.png" alt="Like this album" onclick="increaseLikes('#transit-likes')">
+                            <small><span id="transit-likes">95</span> likes</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
