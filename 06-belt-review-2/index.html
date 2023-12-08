@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeIt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffd2134fa2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- appbar starts -->
+    <div class="appbar d-flex">
+        <div class="d-flex">
+            <i class="fa-solid fa-cat"></i>
+            <h2>CodeIt</h2>
+            <div>
+                <input type="text" name="search" id="search">
+                <button onclick="alertMessage()">Go</button>
+                <select name="stack" id="stack" onchange="stackAlert()">
+                    <option value="Web Fundamentals">Web Fundamentals</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex">
+            <button class="btn">Get App</button>
+            <button class="btn">Log In</button>
+        </div>
+    </div>
+    <!-- appbar ends -->
+    <header>
+        <div class="container">
+            <div class="d-flex flex-start">
+                <div class="logo">
+                    <i class="fa-solid fa-cat"></i>
+                </div>
+                <h1>c/Dojo</h1>
+                <button class="btn" onclick="removeFromDOM(this)">Join</button>
+            </div>
+            <nav>
+                <ul class="d-flex">
+                    <li>Posts</li>
+                    <li>Wiki</li>
+                    <li>c/Dojo</li>
+                    <li>Discord</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container d-flex section">
+        <main>
+            <div class="card">
+                <div class="card-body d-flex">
+                    <div class="votes flex-column">
+                        <i class="fa-solid fa-arrow-up" onclick="upVote('#projectVotes')"></i>
+                        <span id="projectVotes">128</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Best of Project Week 2022!</h3>
+                        <img src="./images/project-week.jpg" alt="Project Week" id="project-week"
+                            onmouseover="changePic()">
+                        <div class="d-flex flex-start">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <small>142 comments</small>
+                            <i class="fa-solid fa-share"></i>
+                            <small>share</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body d-flex">
+                    <div class="votes flex-column">
+                        <i class="fa-solid fa-arrow-up" onclick="upVote('#catVotes')"></i>
+                        <span id="catVotes">128</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="content">
+                        <h3>I use my cat as a rubber duck, is that weird?</h3>
+                        <img src="./images/project-week.jpg" alt="Project Week">
+                        <div class="d-flex flex-start">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <small>142 comments</small>
+                            <i class="fa-solid fa-share"></i>
+                            <small>share</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="card">
+                <div class="card-header">
+                    <h4>About the Dojo</h4>
+                </div>
+                <div class="card-body">
+                    <p>Changing lives with code and a dedicated group of debuggers!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Discord</h4>
+                </div>
+                <div class="card-body">
+                    <button class="btn w-100" onclick="discordJoin()">discord.gg/cdojo</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>c/Dojo Rules</h4>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ol>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
