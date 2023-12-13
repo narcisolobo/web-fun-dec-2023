@@ -18,6 +18,21 @@ Now that files have been staged, we can take our "snapshot" by running the `comm
 git commit -m "initial commit"
 ```
 
+Think of this message as a caption for your snapshot. It should be as descriptive as possible. A great way to decide what your message should be is to ask yourself, "Why am I taking this snapshot?" The answer is your message.
+
+**Example messages:**
+
+```shell
+git commit -m "fixed navbar"
+```
+```shell
+git commit -m "created likes function"
+```
+```shell
+git commit -m "added services page"
+```
+
+
 At any point in this process, run the `git status` command to see how the state of your repository changes after each command.
 
 ### Ignoring Files with `.gitignore`
