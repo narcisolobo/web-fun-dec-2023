@@ -93,7 +93,7 @@ Many applications that developers use do not have a graphical user interface (GU
     #mac/gitbash
     ls -l
     ```
-    ```
+    
 4. `touch` (Mac/Git Bash) `nul >` (PC)
    
    The `touch` command (Mac/Git Bash) or the `nul >` command (PC) creates a file in the current directory. Let’s use this command to create some files on our Desktop.
