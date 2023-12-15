@@ -45,16 +45,26 @@ while (start < end) {
 */
 
 function reverse(arr) {
-  // your code here
+  let start = 0;
+  let end = arr.length - 1;
+  while (start < end) {
+    let temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
+
+  return arr;
 }
 
 let nums1 = [1, 2, 3, 4, 5]; // [5, 4, 3, 2, 1]
 let nums2 = [1]; // [1]
 let nums3 = []; // []
 
-reverse(nums1);
-reverse(nums2);
-reverse(nums3);
+console.log(reverse(nums1));
+console.log(reverse(nums2));
+console.log(reverse(nums3));
 
 // Must mutate the original array. Do not create a new array.
 
