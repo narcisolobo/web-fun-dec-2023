@@ -1,6 +1,10 @@
-// username is entered
-// get username (value of the text input)
-// when form is submitted make a get request to github api
-// parse json response, cherry picked necessary info
-// inject info into new card
-// render card onto page
+/* 
+  PSEUDOCODE:
+
+  1. username is entered
+  2. get username (value of the text input)
+  3. when form is submitted make a get request to github api using username
+  4. parse json response, cherry picked necessary info
+  5. inject info into new card
+  6. render card onto page
+*/
