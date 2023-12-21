@@ -4,8 +4,8 @@
  * a parameter for the number of cents, and computes
  * how to represent that amount with the fewest
  * number of coins. Return the result in the form of
- * an object with the following keys: quarters, dimes,
- * nickels, pennies.
+ * an object with the following properties/keys: quarters,
+ * dimes, nickels, pennies.
  */
 
 /**
