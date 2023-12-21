@@ -1,0 +1,84 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: rebeccapurple;
+  padding: 0 8px;
+  margin-bottom: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  border: 0;
+  padding: 0.25rem 1.5rem;
+  background-color: gold;
+  border-radius: 0.2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article {
+  padding: 1rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  flex: 2;
+}
+
+article.fun-fact {
+  display: none;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    background-color: cornflowerblue;
+  }
+
+  .d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  article.fun-fact {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    padding: 8px 16px;
+  }
+
+  .btn {
+    background-color: red;
+  }
+
+  .d-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
