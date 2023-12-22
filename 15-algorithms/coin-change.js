@@ -24,5 +24,25 @@
  * @returns {Change}
  */
 function generateCoinChange(cents) {
-  // your code here
+  const change = {
+    quarters: 0,
+    dimes: 0,
+    nickels: 0,
+    pennies: 0,
+  };
+
+  change.quarters = Math.floor(cents / 25);
+  cents -= change.quarters * 25;
+
+  change.dimes = Math.floor(cents / 10);
+  cents -= change.dimes * 10;
+
+  change.nickels = Math.floor(cents / 5);
+  cents -= change.nickels * 5;
+
+  change.pennies = cents;
+
+  return change;
 }
+
+console.log(generateCoinChange(94));

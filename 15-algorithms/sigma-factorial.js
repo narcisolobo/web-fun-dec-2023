@@ -5,8 +5,8 @@
  * that number (inclusive).
  *
  * Examples:
- * ​sigma(3) = 6 (or 1+2+3);
- * sigma(5)​ = 15 (or 1+2+3+4+5).
+ * ​sigma(3) = 6 (or 1 + 2 + 3);
+ * sigma(5)​ = 15 (or 1 + 2 + 3 + 4 + 5).
  */
 
 /**
@@ -16,7 +16,11 @@
  * @returns {number}
  */
 function sigma(num) {
-  // your code here
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 console.log(sigma(3)); // 6 (or 1 + 2 + 3)
@@ -41,7 +45,11 @@ console.log(sigma(5)); // 15 (or 1 + 2 + 3 + 4 + 5)
  * @returns {number}
  */
 function factorial(num) {
-  // your code here
+  let product = 1;
+  for (let i = 1; i <= num; i++) {
+    product *= i;
+  }
+  return product;
 }
 
 console.log(factorial(3));

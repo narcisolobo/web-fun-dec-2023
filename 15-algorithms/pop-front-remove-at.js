@@ -12,8 +12,20 @@
  * @returns {number}
  */
 function popFront(arr) {
-  // your code here
+  const popped = arr[0];
+
+  for (let idx = 0; idx < arr.length; idx++) {
+    arr[idx] = arr[idx + 1];
+  }
+
+  arr.pop();
+
+  console.log(arr);
+  return popped;
 }
+
+let nums1 = [1, 2, 3, 4, 5];
+console.log(popFront(nums1));
 
 /**
  * RemoveAt
@@ -32,5 +44,17 @@ function popFront(arr) {
  * @returns {number}
  */
 function removeAt(arr, idx) {
-  // your code here
+  const popped = arr[idx];
+
+  for (let i = idx; i < arr.length; i++) {
+    arr[i] = arr[i + 1];
+  }
+
+  arr.pop();
+
+  console.log(arr);
+  return popped;
 }
+
+let nums2 = [2, 3, 4, 5, 6];
+console.log(removeAt(nums2, 2));
